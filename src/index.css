@@ -1,0 +1,82 @@
+.accordion-parent {
+    width: 100%;
+    background: white;
+    margin-bottom: 50px;
+  }
+  
+  @media (max-width: 400px) {
+    .accordion-parent {
+      margin-bottom: 25px;
+    }
+  }
+  
+  .accordion-parent .trigger-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    padding: 20px;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .accordion-parent .trigger-container h3 {
+    color: rgb(17, 17, 17);
+  }
+  
+  .accordion-parent .trigger-container button {
+    -webkit-transition: all linear 0.2s;
+    transition: all linear 0.2s;
+  }
+
+  .accordion-parent .trigger-container button svg{
+    width: 8px;
+    height: 14px;
+    fill: rgb(31, 31, 31);
+  }
+  .accordion-parent .trigger-container button img{
+    width: 14px;
+  }
+  
+  .accordion-parent .trigger-container button img {
+    width: 8px;
+    height: 14px;
+  }
+  
+  .accordion-parent .trigger-container.active-trigger button {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  
+  .accordion-parent .trigger-container:hover {
+    cursor: pointer;
+  }
+  
+  .accordion-parent .accordion {
+    padding: 0 20px;
+    overflow: auto;
+    -webkit-transition: all linear 0.2s;
+    transition: all linear 0.2s;
+  }
+  
+  .accordion-parent .accordion.active-accordion {
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    padding: 40px 20px 0 20px;
+  }
+  
+  @media (max-width: 650px) {
+    .accordion-parent .accordion.active-accordion {
+      padding: 40px 10px;
+    }
+  }
